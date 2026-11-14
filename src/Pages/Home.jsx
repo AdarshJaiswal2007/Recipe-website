@@ -10,6 +10,7 @@ function Home() {
     const [recipes, setrecipes] = useState([])
     const [total, settotal] = useState(0)
      const [loading,setloading]= useState(true)
+       const [errormessage,seterrormessage]= useState("")
     const [searchQuery, setsearchQuery] = useState("")
 
     async function fetchRecipes(skipCount, query) {
